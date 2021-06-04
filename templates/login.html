@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        input[type=submit],input[type=button]{
+            background-color: salmon;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            border-radius: 16PX;
+            cursor: pointer;
+            width: 120Px;
+            margin-left: -10%;
+        }
+        body{
+            background-color: cyan;
+        }
+        .col-2{
+            margin-top: 5%;
+            margin-left: 40%;
+            background-color: rgba(20, 20, 20, 0.6);
+            width: 400px;
+            height: 40%;
+            border-radius: 16px;
+        }
+        .col-1{
+            margin-left: 0;
+        }
+        h1{
+            margin-top: 10%;
+            margin-left:45%;
+            color:slateblue;
+        }
+        form{
+            margin-left: 20px;
+        }
+        input{
+            text-align: justify;
+            margin-top: 10px;
+            color:saddlebrown;
+            border: none;
+            outline:none;
+            background:none;
+            font-size: 18px;
+            color: rgb(134, 240, 240);
+            border-bottom:1px solid #7ab0e2 ;
+            cursor: pointer;
+        }
+        label{
+            color: salmon;
+            font-size: 18px;
+        }
+        #Sb{
+            margin-left: 5%;
+        }
+        #Bt{
+            margin-left: 10%;
+        }
+        a{
+            color: rgb(238, 225, 37);
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <!---img src="{{url_for('static',filename ='login1.jpg')}}" alt="login1" width="100%" height="100%"--->
+    <div class='col-1'>
+        
+        <div class='col-2'>
+            <form action="http://127.0.0.1:5000/loginvalidation" method="POST">
+                <label for="E-mali">E-mail</label>
+                <input type="email" id='E-mail' name='Email' value=''><br>
+                <br>
+    
+                <label for="pws">Password</label>
+                <input type="password" id='pws' name='Password' value=''><br>
+                <br>
+    
+                <a href="login.html"><input type="submit" value='Login' id='Sb'></a>
+                <a href="resgist.html"><input type='button' value='Register' id='Bt'></a>
+                <br><br>
+               <center><a href="#">Forget Password ?</a></center> <br>
+                
+        </div>
+    </div>
+</body>
+</html>

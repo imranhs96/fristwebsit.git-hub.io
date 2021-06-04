@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgist</title>
+    <style> 
+        body{
+            background-color:burlywood ;
+            width: cover ;
+            height: 100% ;
+        }
+        .col-lg-1{
+            background-color: rgba(20, 30, 20, 0.6);
+            margin-top: 0%;
+            margin-left: 40%;
+            width: 400px;
+            height: 100%;
+            border-radius: 16px;
+        }
+        .gendar{
+            color: skyblue;
+        }
+        .Submit-bt{
+            margin-left:11% ;
+            margin-top: 17%;
+        }
+        .rest-bt{
+            margin-top: -16%;
+            margin-left: 50%;
+        }
+        input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            border-radius: 16PX;
+            cursor: pointer;
+            width: 120Px;
+            
+            outline:none;
+        }
+        
+        
+        
+        form{
+            margin-left: 20px;
+        }
+        input{
+            text-align: justify;
+            margin-top: 10px;
+            color:saddlebrown;
+            border: none;
+            outline:none;
+            background:none;
+            font-size: 18px;
+            color: rgb(134, 240, 240);
+            border-bottom:1px solid #7ab0e2 ;
+            cursor: pointer;
+        }
+        label{
+            color: salmon;
+            font-size: 18px;
+        }
+        h1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+        <center><h1>Register</h1></center>
+    
+    <div class='col-lg-1'>
+
+        <form action="http://127.0.0.1:5000/result" method ='POST'>
+            <label for="FName">&nbsp;&nbsp; Full Name</label>
+            <input type="text" id="FName" name='Name' placeholder="Enter Full Name" value=''><br>
+            <br>
+
+            <label for="phone">&nbsp;&nbsp;Phone</label>
+            <input type="tel" name="Phone" id="phone" pattern="[0-9]{10}" placeholder="Enter Phone Number" value=""><br><br>
+
+            <label for="DATE-Of-Brith">&nbsp;&nbsp;Date Of Brith</label>
+            <input type="date" id='DATE-Of-Brith' name='DOB' value=""><br>
+            <br>
+            
+            <label >&nbsp;&nbsp;Gendar</label>
+            &nbsp;&nbsp;
+            
+            <input type="radio"  id="Gendar.male" value='Male' name='Sex' class='gendar'>
+            <label for="Gendar.male">Male</label>
+
+            
+            <input type="radio" name="Sex" id="Gendar.female" value='Female' class='gendar'>
+            <label for="Gendar.female">Female</label>
+            
+            
+            <input type="radio" name="Sex" id="Gendar.other" value="Other" class='gendar'>
+            <label for='Gendar.other'>Other</label>
+            <br><br>
+            
+            <label for="Email">&nbsp;&nbsp;E-mail</label>
+            <input type="email" id="Email" name='Email' placeholder="Enter Email Id"><br>
+            <br>
+
+            <label for="Psw">&nbsp;&nbsp;Password</label>
+            <input type="password" id="Psw" name='Password' placeholder="Enter Password" value=""><br>
+            <br>
+            
+            <label for="Psw">&nbsp;&nbsp;Re-Password</label>
+            <input type="password" id="Psw" name='Repassword' placeholder="Enter Password" value="">
+            
+            <div class="Submit-bt">
+                <input type="submit" value='Submit'>
+            </div>
+            
+            <div class='rest-bt'>
+                <input type="reset" value="Reset">
+            </div>
+            
+            
+        </form>
+    </div>
+</body>
+</html>
